@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/abstracts/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!-- <link rel="stylesheet" href="magnific-popup/magnific-popup.css"> -->
-    <link rel="stylesheet" href="./libs/Magnific-Popup/magnific-popup.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>dream-hourse</title>
-</head>
-
-<body>
-
-    <!-- HEADER -->
-
-    <header class="header">
-        <div class="header__wrap">
-            <div class="header__left">
-                <img class="header__logo logo" src="./assets/images/header/logo-arch.svg" alt="">
-                <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item">Design Gallery</li>
-                        <li class="nav__list-item">List of Architect</li>
-                        <li class="nav__list-item">Articles</li>
-                        <li class="nav__list-item">How it Works</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__right">
-                <img class="header__seach" src="./assets/images/header/ic-searhc.svg" alt="">
-                <button class="header__btn btn header__btn--sign-in">Sign In</button>
-                <button class="header__btn btn header__btn--sign-up">Sign Up</button>
-            </div>
-        </div>
-    </header>
-
+<?php get_header(); ?>
     <!-- MAIN -->
 
     <section class="main">
@@ -59,12 +20,12 @@
         <div class="container">
             <h2 class="gallery__title title">Build professional valuable room for you</h2>
             <div class="gallery__inner">
-                <a href="./assets/images/gallery/img1.png" title="image-1" class="gallery-link"><img class="gallery-img" src="./assets/images/gallery/img1.png" alt=""></a>
-                <a href="./assets/images/gallery/img2.png" title="image-2" class="gallery-link"><img class="gallery-img" src="./assets/images/gallery/img2.png" alt=""></a>
-                <a href="./assets/images/gallery/img3.png" title="image-3" class="gallery-link"><img class="gallery-img" src="./assets/images/gallery/img3.png" alt=""></a>
-                <a href="./assets/images/gallery/img4.png" title="image-4" class="gallery-link"><img class="gallery-img" src="./assets/images/gallery/img4.png" alt=""></a>
-                <a href="./assets/images/gallery/img5.png" title="image-5" class="gallery-link"><img class="gallery-img" src="./assets/images/gallery/img5.png" alt=""></a>
-                <a href="./assets/images/gallery/img6.png" title="image-6" class="gallery-link"><img class="gallery-img" src="./assets/images/gallery/img6.png" alt=""></a>
+                <a href="./assets/images/gallery/img1.png" title="image-1" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img1.png" alt=""></a>
+                <a href="./assets/images/gallery/img2.png" title="image-2" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img2.png" alt=""></a>
+                <a href="./assets/images/gallery/img3.png" title="image-3" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img3.png" alt=""></a>
+                <a href="./assets/images/gallery/img4.png" title="image-4" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img4.png" alt=""></a>
+                <a href="./assets/images/gallery/img5.png" title="image-5" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img5.png" alt=""></a>
+                <a href="./assets/images/gallery/img6.png" title="image-6" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img6.png" alt=""></a>
             </div>
 
         </div>
@@ -182,34 +143,4 @@
             </div>
         </div>
     </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrap">
-                <nav class="footer__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item">About Us</li>
-                        <li class="nav__list-item">How it Works</li>
-                        <li class="nav__list-item">FAQ</li>
-                        <li class="nav__list-item">Contact Us</li>
-                        <li class="nav__list-item">Privacy Policy</li>
-                    </ul>
-                </nav>
-                <img class="logo" src="./assets/images/header/logo-arch.svg" alt="">
-
-            </div>
-
-
-        </div>
-
-    </footer>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.js"></script>
-
-    <script src="assets/js/script.js"></script>
-</body>
-
-</html>
+    <?php get_footer(); ?>
