@@ -8,8 +8,10 @@
    
     
     <!-- <link rel="stylesheet" href="./css/abstracts/normalize.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />  -->
+    <!-- <link rel="stylesheet" href="./libs/magnific-popup/magnific-popup.css">  -->
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
 
     <?php wp_head(); ?>
