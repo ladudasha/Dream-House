@@ -10,7 +10,7 @@
                     <p class="main__text text">The first and most trusted marketplace of design & build house in The World. 100% guaranteed Build safe, comfortable and transparent with a project management for the best result</p>
                     <button class="main__btn btn">Free Consultation</button>
                 </div>
-                <img class="main__img" src="./assets/images/main/Rectangle 1.png" alt="">
+                <img class="main__img" src="<?php echo IMG_DIR; ?>/main/Rectangle 1.png" alt="">
             </div>
         </div>
     </section>
@@ -20,12 +20,12 @@
         <div class="container">
             <h2 class="gallery__title title">Build professional valuable room for you</h2>
             <div class="gallery__inner">
-                <a href="./assets/images/gallery/img1.png" title="image-1" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img1.png" alt=""></a>
-                <a href="./assets/images/gallery/img2.png" title="image-2" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img2.png" alt=""></a>
-                <a href="./assets/images/gallery/img3.png" title="image-3" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img3.png" alt=""></a>
-                <a href="./assets/images/gallery/img4.png" title="image-4" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img4.png" alt=""></a>
-                <a href="./assets/images/gallery/img5.png" title="image-5" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img5.png" alt=""></a>
-                <a href="./assets/images/gallery/img6.png" title="image-6" class="gallery-link"><img class="gallery__img" src="./assets/images/gallery/img6.png" alt=""></a>
+                <a href="<?php echo IMG_DIR; ?>/gallery/img1.png" title="image-1" class="gallery-link"><img class="gallery__img" src="<?php echo IMG_DIR; ?>/gallery/img1.png" alt=""></a>
+                <a href="<?php echo IMG_DIR; ?>/gallery/img2.png" title="image-2" class="gallery-link"><img class="gallery__img" src="<?php echo IMG_DIR; ?>/gallery/img2.png" alt=""></a>
+                <a href="<?php echo IMG_DIR; ?>/gallery/img3.png" title="image-3" class="gallery-link"><img class="gallery__img" src="<?php echo IMG_DIR; ?>/gallery/img3.png" alt=""></a>
+                <a href="<?php echo IMG_DIR; ?>/gallery/img4.png" title="image-4" class="gallery-link"><img class="gallery__img" src="<?php echo IMG_DIR; ?>/gallery/img4.png" alt=""></a>
+                <a href="<?php echo IMG_DIR; ?>/gallery/img5.png" title="image-5" class="gallery-link"><img class="gallery__img" src="<?php echo IMG_DIR; ?>/gallery/img5.png" alt=""></a>
+                <a href="<?php echo IMG_DIR; ?>/gallery/img6.png" title="image-6" class="gallery-link"><img class="gallery__img" src="<?php echo IMG_DIR; ?>/gallery/img6.png" alt=""></a>
             </div>
 
         </div>
@@ -39,13 +39,13 @@
             <h2 class="consultation__title title">Build your needs with Archmove</h2>
 
             <div class="consultation__wrap">
-                <img src="./assets/images/consultation/img.png" alt="">
+                <img src="<?php echo IMG_DIR; ?>/consultation/img.png" alt="">
 
                 <div class="consultation__content">
 
                     <div class="consultation__inner">
                         <div class="consultation__icon-box">
-                            <img class="consultation__icon" src="./assets/images/consultation/Group1.svg" alt="">
+                            <img class="consultation__icon" src="<?php echo IMG_DIR; ?>/consultation/Group1.svg" alt="">
                         </div>
                         <div class="consultation__info">
                             <h4 class="consultation__subtitle">100% guaranteed project completion</h4>
@@ -55,7 +55,7 @@
 
                     <div class="consultation__inner">
                         <div class="consultation__icon-box">
-                            <img class="consultation__icon" src="./assets/images/consultation/Group2.svg" alt="">
+                            <img class="consultation__icon" src="<?php echo IMG_DIR; ?>/consultation/Group2.svg" alt="">
                         </div>
                         <div class="consultation__info">
                             <h4 class="consultation__subtitle">No additional fees</h4>
@@ -65,7 +65,7 @@
 
                     <div class="consultation__inner">
                         <div class="consultation__icon-box">
-                            <img class="consultation__icon" src="./assets/images/consultation/Group3.svg" alt="">
+                            <img class="consultation__icon" src="<?php echo IMG_DIR; ?>/consultation/Group3.svg" alt="">
                         </div>
                         <div class="consultation__info">
                             <h4 class="consultation__subtitle">Get escort from the Team</h4>
@@ -121,7 +121,7 @@
             </div>
 
             <div class="reviews-bottom">
-                <img src="./assets/images/reviews/img (1).png" alt="">
+                <img src="<?php echo IMG_DIR; ?>/reviews/img (1).png" alt="">
                 <div>
                     <h2 class="reviews-bottom__title title">Realize your dream project with <span>Archmove</span></h2>
                     <button class="reviews__btn btn">FREE CONSULTATION</button>
@@ -135,11 +135,11 @@
         <div class="container">
             <h2 class="partners__title title">Our Partners</h2>
             <div class="partners__wrap">
-                <img src="./assets/images/partneirs/img1.png" alt="">
-                <img src="./assets/images/partneirs/img2.png" alt="">
-                <img src="./assets/images/partneirs/img3.png" alt="">
-                <img src="./assets/images/partneirs/img4.png" alt="">
-                <img src="./assets/images/partneirs/img5.png" alt="">
+                <img src="<?php echo IMG_DIR; ?>/partneirs/img1.png" alt="">
+                <img src="<?php echo IMG_DIR; ?>/partneirs/img2.png" alt="">
+                <img src="<?php echo IMG_DIR; ?>/partneirs/img3.png" alt="">
+                <img src="<?php echo IMG_DIR; ?>/partneirs/img4.png" alt="">
+                <img src="<?php echo IMG_DIR; ?>/partneirs/img5.png" alt="">
             </div>
         </div>
     </section>
