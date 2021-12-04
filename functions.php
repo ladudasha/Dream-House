@@ -1,6 +1,6 @@
 <?php
 
-	define('THEME_ROOT', get_template_directory_uri());
+define('THEME_ROOT', get_template_directory_uri());
 	define('CSS_DIR', THEME_ROOT . '/assets/css');
 	define('JS_DIR', THEME_ROOT . '/assets/js');
 	define('LIBS_DIR', THEME_ROOT . '/assets/libs');
@@ -9,16 +9,16 @@
 
 
 	add_action( 'wp_enqueue_scripts', 'dream_hourse_styles' );
-	add_action( 'wp_enqueue_scripts', ' dream_hourse_scripts' );
+	add_action( 'wp_enqueue_scripts', 'dream_hourse_scripts' );
 
 	function dream_hourse_styles() {
 		wp_enqueue_style( 'normalize-style', CSS_DIR . '/normalize.css' );
 
 		wp_enqueue_style( 'magnific-style', LIBS_DIR . '/magnific-popup/magnific-popup.css' );
 
-		wp_enqueue_style( 'swiper-style', LIBS_DIR . '/swiper/swiper-bundle.min.css' );
+		wp_enqueue_style( 'swiper-style', LIBS_DIR . '/swiper/swiper-bundle.min.css' );	
 
-		wp_enqueue_style( 'main-style', get_stylesheet_uri(), array('swiper-style') );
+		wp_enqueue_style( 'main-style', get_stylesheet_uri() );
 
 	}
 
@@ -30,12 +30,15 @@
 
 		wp_enqueue_script( 'magnific-script', LIBS_DIR . '/magnific-popup/jquery.magnific-popup.min.js', array('jquery'), null);
 
-		wp_enqueue_script( 'swiper-script', LIBS_DIR . '/swiper/swiper-bundle.min.js', false, null);
-		
-		wp_enqueue_script( 'main-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery', 'swiper-script'), null);
+		wp_enqueue_script( 'swiper-script', LIBS_DIR . '/swiper/swiper-bundle.min.js', array('jquery'), null);
+
+	
+		wp_enqueue_script( 'main-script', JS_DIR . '/script.js', array('jquery'), null);
 
 	}
 ?>
+
+
 
 
 

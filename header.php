@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/style.css"> -->
 
     <?php wp_head(); ?>
-    <title>dream-hourse</title>
+    <title><?php bloginfo( 'description' ); ?></title>
 </head>
 
 <body>
