@@ -1,22 +1,22 @@
 <?php get_header(); ?>
     <!-- MAIN -->
 
-    <section class="main">
+    <section class="main" id="main">
         <div class="container">
-            <h1 class="main__title">Build Your Dream
+            <h1 class="main__title"><?php the_field('main__title'); ?>
                 <span>House</span></h1>
             <div class="main__wrap">
                 <div class="main__content">
-                    <p class="main__text text">The first and most trusted marketplace of design & build house in The World. 100% guaranteed Build safe, comfortable and transparent with a project management for the best result</p>
+                    <p class="main__text text"><?php the_field('main__text'); ?></p>
                     <button class="main__btn btn">Free Consultation</button>
                 </div>
-                <img class="main__img" src="<?php echo IMG_DIR; ?>/main/Rectangle 1.png" alt="">
+                <img class="main__img" src="<?php the_field('main__img'); ?>" alt="">
             </div>
         </div>
     </section>
 
     <!-- GALLERY -->
-    <section class="gallery">
+    <section class="gallery" id="gallery"> 
         <div class="container">
             <h2 class="gallery__title title">Build professional valuable room for you</h2>
             <div class="gallery__inner">
@@ -33,7 +33,7 @@
 
     <!-- CONSULTATION -->
 
-    <section class="consultation">
+    <section class="consultation" id="consultation">
         <div class="container">
 
             <h2 class="consultation__title title">Build your needs with Archmove</h2>
@@ -80,7 +80,7 @@
     </section>
 
     <!-- REVIEWS -->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <div class="reviews-top">
                 <h2 class="reviews-top__title title">Sound Too Good To Be True?</h2>
@@ -131,7 +131,7 @@
     </section>
 
     <!-- PARTNERS -->
-    <section class="partners">
+    <section class="partners" id="partners">
         <div class="container">
             <h2 class="partners__title title">Our Partners</h2>
             <div class="partners__wrap">

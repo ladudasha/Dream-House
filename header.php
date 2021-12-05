@@ -25,15 +25,20 @@
     <header class="header">
         <div class="header__wrap">
             <div class="header__left">
-                <img class="header__logo logo" src="<?php bloginfo( 'template_url' ); ?> ./assets/images/header/logo-arch.svg" alt="">
-                <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item">Design Gallery</li>
-                        <li class="nav__list-item">List of Architect</li>
-                        <li class="nav__list-item">Articles</li>
-                        <li class="nav__list-item">How it Works</li>
-                    </ul>
-                </nav>
+                <a href="<?php bloginfo( 'url' ); ?>" class="header__logo-link">
+                    <img class="header__logo logo" src="<?php bloginfo( 'template_url' ); ?> ./assets/images/header/logo-arch.svg" alt="">
+                </a>
+            <?php 
+                wp_nav_menu( [
+                    'theme_location'  => 'top_menu',
+                
+                    'container'       => 'nav',
+                    'container_class' => 'header__nav nav',
+                    'container_id'    => '',
+                    'menu_class'      => 'nav__list',
+                ] );
+            ?>
+        
             </div>
             <div class="header__right">
                 <img class="header__seach" src="<?php echo IMG_DIR; ?>/header/ic-searhc.svg" alt="">

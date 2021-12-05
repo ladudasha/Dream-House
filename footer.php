@@ -3,16 +3,30 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrap">
-                <nav class="footer__nav nav">
+
+            <?php 
+                wp_nav_menu( [
+                    'theme_location'  => 'bottom_menu',
+                 
+                    'container'       => 'nav',
+                    'container_class' => 'footer__nav nav',
+                    'container_id'    => '',
+                    'menu_class'      => 'nav__list',
+                ] );
+             ?>
+                <!-- <nav class="footer__nav nav">
                     <ul class="nav__list">
-                        <li class="nav__list-item">About Us</li>
-                        <li class="nav__list-item">How it Works</li>
-                        <li class="nav__list-item">FAQ</li>
-                        <li class="nav__list-item">Contact Us</li>
-                        <li class="nav__list-item">Privacy Policy</li>
+                        <li class="nav__list-item"><a class="nav__link" href="#main">About Us</a></li>
+                        <li class="nav__list-item"><a class="nav__link" href="#partners">How it Works</a></li>
+                        <li class="nav__list-item"><a class="nav__link" href="#consultation">FAQ</a></li>
+                        <li class="nav__list-item"><a class="nav__link" href="#reviews">Contact Us</a></li>
+                        <li class="nav__list-item"><a class="nav__link" href="#gallery">Privacy Policy</a></li>
                     </ul>
-                </nav>
-                <img class="logo" src="<?php echo IMG_DIR; ?>/header/logo-arch.svg" alt="">
+                </nav> -->
+                <a href="<?php echo home_url(); ?>">
+                    <img class="logo" src="<?php echo IMG_DIR; ?>/header/logo-arch.svg" alt="">
+                </a>
+                
 
             </div>
 
