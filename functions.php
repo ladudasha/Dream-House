@@ -96,12 +96,12 @@ function getFeatures() {
 		'post_type'   => 'features',		
 	);
 
-	// $features = [];
+	$features = [];
 
-	// foreach (get_posts($args) as $post) {
-	// 	$feature['title'] = $post->post_title
+	foreach (get_posts($args) as $post) {
+		$feature['title'] = $post->post_title
 		
-	// }
+	}
 	
 	return get_posts($args);
 
