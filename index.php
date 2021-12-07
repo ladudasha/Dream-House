@@ -43,13 +43,27 @@
 
                 <div class="consultation__content">
 
-                    <div class="consultation__inner">
+                <?php foreach(getFeatures() as $feature): ?>
+
+                    <div class="consultation__inner">                       
                         <div class="consultation__icon-box">
-                            <img class="consultation__icon" src="<?php echo IMG_DIR; ?>/consultation/Group1.svg" alt="">
+                            <img class="consultation__icon" src="<?php echo $feature['img'] ?>" alt="">
                         </div>
                         <div class="consultation__info">
-                            <h4 class="consultation__subtitle">100% guaranteed project completion</h4>
-                            <p class="consultation__text text">Build safe, comfortable and transparent with a project management application with a joint account.</p>
+                            <h4 class="consultation__subtitle"><?php echo $feature['title'] ?></h4>
+                            <p class="consultation__text text"><?php echo $feature['text'] ?></p>
+                        </div>
+                    </div>
+
+                    <?php endforeach; ?> 
+
+                    <!-- <div class="consultation__inner">
+                        <div class="consultation__icon-box">
+                            <img class="consultation__icon" src="<?php echo IMG_DIR; ?>/consultation/Group2.svg" alt="">
+                        </div>
+                        <div class="consultation__info">
+                            <h4 class="consultation__subtitle">No additional fees</h4>
+                            <p class="consultation__text text">There are no hidden costs. The value of the offer you get is the value you paid.</p>
                         </div>
                     </div>
 
@@ -71,7 +85,7 @@
                             <h4 class="consultation__subtitle">Get escort from the Team</h4>
                             <p class="consultation__text text">Monitor reports from the Arsitag team who check directly in the field.</p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <button class="consultation__btn btn">CONSULTATION</button>
                 </div>

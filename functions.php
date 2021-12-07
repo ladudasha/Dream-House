@@ -92,21 +92,26 @@ function svg_upload_allow( $mimes ) {
 function getFeatures() {
 	$args = array(	
 		'orderby'     => 'date',
-		'order'       => 'DESC',		
+		'order'       => 'ASC',		
 		'post_type'   => 'features',		
 	);
 
 	$features = [];
 
 	foreach (get_posts($args) as $post) {
-		$feature['title'] = $post->post_title
+		$feature['title'] = $post->post_title; 
+		$feature['text'] = $post->post_content;
+		$feature['img'] = get_the_post_thumbnail_url( $post->ID, 'thumbnail' );
+
+
+		$features[] = $feature;
 		
 	}
 	
-	return get_posts($args);
+	return $features;
 
 }
-var_dump(getFeatures());
+// var_dump(getFeatures());
 
 
 
