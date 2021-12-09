@@ -52,6 +52,7 @@
                         <div class="consultation__info">
                             <h4 class="consultation__subtitle"><?php echo $feature['title'] ?></h4>
                             <p class="consultation__text text"><?php echo $feature['text'] ?></p>
+                            <i><?php echo $feature['add_desc'] ?></i>
                         </div>
                     </div>
 

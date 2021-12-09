@@ -99,6 +99,9 @@ function getFeatures() {
 	$features = [];
 
 	foreach (get_posts($args) as $post) {
+
+		$feature = get_fields( $post->ID );
+
 		$feature['title'] = $post->post_title; 
 		$feature['text'] = $post->post_content;
 		$feature['img'] = get_the_post_thumbnail_url( $post->ID, 'thumbnail' );
@@ -111,8 +114,8 @@ function getFeatures() {
 	return $features;
 
 }
-// var_dump(getFeatures());
 
+var_dump(getFeatures());
 
 
 
